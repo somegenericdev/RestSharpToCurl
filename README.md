@@ -1,4 +1,7 @@
 # RestSharpToCurl
+
+[![Get me on](https://img.shields.io/badge/NuGet-004880?style=for-the-badge&logo=nuget&logoColor=white)](https://www.nuget.org/packages/SomeGenericDev.RestSharpToCurl)
+
 A tiny and hacky library that uses reflection to generate a curl script out of RestSharp's requests.
 
 ```csharp
