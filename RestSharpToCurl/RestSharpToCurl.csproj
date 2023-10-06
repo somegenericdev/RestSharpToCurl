@@ -11,12 +11,16 @@
         <PackageReference Include="RestSharp" Version="110.2.0"/>
     </ItemGroup>
     <PropertyGroup>
+        <Description>A tiny and hacky library that uses reflection and DelegatingHandlers to generate a cURL script out of RestSharp's requests.</Description>
+        <PackageTags>RestSharp;Rest;Http;Curl;</PackageTags>
         <PackageId>SomeGenericDev.RestSharpToCurl</PackageId>
-        <Version>1.0.0</Version>
+        <Version>1.1.0</Version>
         <Authors>somegenericdev</Authors>
         <Company>somegenericdev</Company>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/somegenericdev/RestSharpToCurlGenerator.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 
     <ItemGroup>

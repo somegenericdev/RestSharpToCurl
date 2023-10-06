@@ -11,7 +11,7 @@ namespace RestSharpToCurl
         public HttpClient HttpClient;
         private StrongBox<string> CurlScript;
 
-        public CurlGeneratorHandler(HttpMessageHandler innerHandler, ref StrongBox<string> curlScript)
+        public CurlGeneratorHandler(HttpMessageHandler innerHandler, StrongBox<string> curlScript)
             : base(innerHandler)
         {
             CurlScript = curlScript;
@@ -20,7 +20,7 @@ namespace RestSharpToCurl
         protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
             CurlScript.Value=HttpClient.GenerateCurlInString(request);
-            HttpResponseMessage response = await base.SendAsync(request, cancellationToken);
+            HttpResponseMessage response=null;
             return response;
         }
     }
