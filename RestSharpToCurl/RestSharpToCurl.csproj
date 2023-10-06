@@ -14,7 +14,7 @@
         <Description>A tiny and hacky library that uses reflection and DelegatingHandlers to generate a cURL script out of RestSharp's requests.</Description>
         <PackageTags>RestSharp;Rest;Http;Curl;Generator;</PackageTags>
         <PackageId>SomeGenericDev.RestSharpToCurl</PackageId>
-        <Version>1.1.0</Version>
+        <Version>1.1.1</Version>
         <Authors>somegenericdev</Authors>
         <Company>somegenericdev</Company>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
